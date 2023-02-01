@@ -1,6 +1,10 @@
 micronaut:
   application:
     name: micronautguide
+  server:
+    max-request-size: 2147483647  #100 Mb
+    multipart:
+      max-file-size: 104857600 #100 Mb
 netty:
   default:
     allocator:
