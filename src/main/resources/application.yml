@@ -1,11 +1,25 @@
-micronaut:
-  application:
-    name: micronautguide
-  server:
-    max-request-size: 2147483647  #100 Mb
-    multipart:
-      max-file-size: 104857600 #100 Mb
-netty:
-  default:
-    allocator:
-      max-order: 3
+some-property:
+  working:
+    string-value: "working"
+    map-value:
+      Injectable_Raw_Data:
+        Foo: 4
+        Foo_underscore: 2
+  working-kebab-case:
+    string-value: "working-kebab-case"
+    map-value:
+      Injectable_Raw_Data:
+        Foo: 4
+        Foo_underscore: 2
+  not_working_underscore:
+    string-value: "not_working_underscore"
+    map-value:
+      NotInjecrable_Raw_Data:
+        Bar: 4
+        Bar_underscore: 2
+  notWorkingCamelCase:
+    string-value: "notWorkingCamelCase"
+    map-value:
+      NotInjecrable_Raw_Data:
+        Bar: 4
+        Bar_underscore: 2
